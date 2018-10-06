@@ -1,13 +1,11 @@
-
 @import "../../../../node_modules/bulma/bulma.sass";
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100');
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:100");
 @charset "utf-8";
 // BACKGROUND
 .background-container {
   position: relative;
   width: 100%;
   height: 100%;
-
   overflow: hidden;
   float: left;
   cursor: default;
@@ -47,13 +45,14 @@
   display: none;
 }
 
-// CONTENT
-.content {
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+.title {
+  font-size: 300px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 60px;
+  color: #ffffff;
 }
 
 .greeting {
@@ -63,7 +62,6 @@
   display: flex;
   align-content: center;
   justify-content: center;
-
 }
 
 .greeting > span {
@@ -71,59 +69,60 @@
 }
 
 .greeting > .time {
-  font-size: 40px;
+  font-size: 300px;
 
-// Add Focus
-.feature__add-focus {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
-  border: 1px solid #ffffff;
-}
-
-.add-focus__form {
-  text-align: center;
-
-  label {
-    display: block;
-    color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    letter-spacing: 0.05em;
+  // Add Focus
+  .feature__add-focus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border: 1px solid #ffffff;
   }
 
-  input {
+  .add-focus__form {
+    text-align: center;
+
+    label {
+      display: block;
+      color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+    }
+
+    input {
+      width: 100%;
+      padding: 30px 10px 5px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #ffffff;
+      color: #ffffff;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #ffffff;
+      opacity: 0.6;
+    }
+
+    .answer {
+      color: #ffffff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+    }
+  }
+  .quote {
+    font: 20px "Gothic A1", sans-serif;
     width: 100%;
-    padding: 30px 10px 5px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #ffffff;
-    color: #ffffff;
-    font-size: 24px;
-    letter-spacing: 0.05em;
-    outline: none;
+    position: absolute;
+    bottom: 2%;
+    z-index: 99999999;
+    text-align: center;
+    color: #fff;
   }
-
-  input::placeholder {
-    color: #ffffff;
-    opacity: 0.6;
-  }
-  
-  .answer {
-    color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    letter-spacing: 0.05em;
-  }
-  
-.quote {
-  font: 20px 'Gothic A1', sans-serif;
-  width: 100%;
-  position: absolute;
-  bottom: 2%;
-  z-index: 99999999;
-  text-align: center;
-  color: #fff;
 }

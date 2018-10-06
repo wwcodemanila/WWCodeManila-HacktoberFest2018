@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import Focus from "./components/Focus";
 import axios from "axios";
 
-import Greetings from "./components/Greetings.js"
+import Greetings from "./components/Greetings.js";
 
 import Background from "./components/Background";
 import Hugot from "./components/Hugot.js";
-
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +44,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-
         <Background
           imgSrc={this.state.img}
           alt={this.state.post_url}
@@ -53,10 +51,12 @@ class App extends Component {
           handleImageLoader={this.handleImageLoader}
           imageLoaded={this.state.imageLoaded}
         />
-      
-        <Greetings  />
-        <Focus/>
-      <Hugot />
+
+        <div className="container">
+          <Greetings />
+          <Focus />
+          <Hugot />
+        </div>
       </React.Fragment>
     );
   }
