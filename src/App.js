@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Greetings from "./components/Greetings";
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +26,10 @@ class App extends Component {
     });
   }
 
+  hello = () => {
+    console.log("hello!");
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -35,6 +40,7 @@ class App extends Component {
             width="100%"
             height="100%"
           />
+          <Greetings />
         </div>
       </React.Fragment>
     );
