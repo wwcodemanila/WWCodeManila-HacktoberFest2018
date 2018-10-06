@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Background from "./components/Background";
 
 class App extends Component {
   constructor(props) {
@@ -8,7 +9,9 @@ class App extends Component {
       author: "",
       author_url: "",
       img: "",
-      post_url: ""
+      placeholder: "",
+      post_url: "",
+      imageLoaded: false
     };
   }
 
@@ -19,23 +22,31 @@ class App extends Component {
       this.setState({
         author: data[random].author,
         author_url: data[random].author_url,
-        img: `https://picsum.photos/1080/720?image=${data[random].id}`,
+        img: `https://picsum.photos/1920?image=${data[random].id}`,
+        placeholder: `https://picsum.photos/8?image=${data[random].id}`,
         post_url: data[random].post_url
       });
     });
   }
 
+  handleImageLoader = () => {
+    console.log("Image is loaded!");
+    this.setState({
+      imageLoaded: true
+    });
+  };
+
   render() {
     return (
       <React.Fragment>
-        <div className="background">
-          <img
-            src={this.state.img}
-            alt={this.state.post_url}
-            width="100%"
-            height="100%"
-          />
-        </div>
+        <Background
+          imgSrc={this.state.img}
+          alt={this.state.post_url}
+          placeholder={this.state.placeholder}
+          handleImageLoader={this.handleImageLoader}
+          imageLoaded={this.state.imageLoaded}
+        />
+        <div className="content">Hello</div>
       </React.Fragment>
     );
   }
