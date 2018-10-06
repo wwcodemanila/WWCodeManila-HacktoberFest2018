@@ -1,11 +1,60 @@
-.background {
+
+@import "../../../../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100');
+@charset "utf-8";
+// BACKGROUND
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  float: left;
+  cursor: default;
+}
+
+.background-preload {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-loaded {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.background-fade-in {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+// CONTENT
+.content {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   overflow: hidden;
 }
-
 
 // Add Focus
 .feature__add-focus {
@@ -51,4 +100,13 @@
     font-size: 24px;
     letter-spacing: 0.05em;
   }
+  
+.quote {
+  font: 20px 'Gothic A1', sans-serif;
+  width: 100%;
+  position: absolute;
+  bottom: 2%;
+  z-index: 99999999;
+  text-align: center;
+  color: #fff;
 }
