@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Background from "./components/Background";
+import Hugot from "./components/Hugot.js";
 
 class App extends Component {
   constructor(props) {
@@ -46,7 +47,8 @@ class App extends Component {
           handleImageLoader={this.handleImageLoader}
           imageLoaded={this.state.imageLoaded}
         />
-        <div className="content">Hello</div>
+      <Hugot />
+
       </React.Fragment>
     );
   }
