@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Focus from "./components/Focus";
 import axios from "axios";
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
             height="100%"
           />
         </div>
+        <Focus></Focus>
       </React.Fragment>
     );
   }
