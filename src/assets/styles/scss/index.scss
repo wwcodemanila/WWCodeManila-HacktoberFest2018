@@ -56,6 +56,23 @@
   overflow: hidden;
 }
 
+.greeting {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.greeting > span {
+  display: block;
+}
+
+.greeting > .time {
+  font-size: 40px;
+
 // Add Focus
 .feature__add-focus {
   position: absolute;
