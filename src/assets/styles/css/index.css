@@ -1,0 +1,20 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden; }
+
+.greeting {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+
+.greeting > span {
+  display: block; }
+
+.greeting > .time {
+  font-size: 40px; }
