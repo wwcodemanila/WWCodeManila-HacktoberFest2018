@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Focus from "./components/Focus";
 import axios from "axios";
 import Background from "./components/Background";
 import Hugot from "./components/Hugot.js";
@@ -40,6 +41,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+
         <Background
           imgSrc={this.state.img}
           alt={this.state.post_url}
@@ -47,8 +49,10 @@ class App extends Component {
           handleImageLoader={this.handleImageLoader}
           imageLoaded={this.state.imageLoaded}
         />
+      
+        <Focus/>
       <Hugot />
-
+      
       </React.Fragment>
     );
   }
