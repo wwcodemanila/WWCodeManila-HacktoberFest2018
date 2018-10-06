@@ -33,14 +33,15 @@ class Focus extends React.Component {
                     <label for="focus-input">What's your main focus for today?</label>
                     {
                         this.state.isEditing ?
-                        <input
-                        onKeyPress={this.onClickEnter}
-                        onChange={this.handleInputChange}
-                        value={this.state.answer}
-                        type="text"
-                        id="focus-input"
-                        placeholder="Type your focus here..."
-                    /> : <p className="answer">{this.state.answer}</p>
+                            <input
+                                onKeyPress={this.onClickEnter}
+                                onChange={this.handleInputChange}
+                                value={this.state.answer}
+                                type="text"
+                                id="focus-input"
+                                placeholder="Type your focus here..."
+                            /> 
+                        : <p className="answer">{this.state.answer}</p>
                     }
                 </form>
             </div>
