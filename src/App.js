@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Hugot from "./components/Hugot.js";
 
 class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div className="background">
+          <Hugot />
           <img
             src={this.state.img}
             alt={this.state.post_url}
