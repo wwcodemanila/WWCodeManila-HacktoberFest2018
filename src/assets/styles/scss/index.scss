@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
+
 .background {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   overflow: hidden;
+}
+
+.quote {
+  font: 24px 'Oswald', sans-serif;
+  width: 100%;
+  position: absolute;
+  bottom: 2%;
+  z-index: 99999999;
+  text-align: center;
+  color: #fff;
 }
