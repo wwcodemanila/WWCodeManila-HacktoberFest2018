@@ -6,7 +6,7 @@ const Greetings = ({ name = "Women Who Code" }) => {
   return (
     <React.Fragment>
       <header className="greeting">
-        <span className="current-time">{moment().format("LT")}</span>
+        <span className="current-time">{moment().format("LT")}</span><br></br>
         <span className="name">Hi, {name}</span>
       </header>
     </React.Fragment>
