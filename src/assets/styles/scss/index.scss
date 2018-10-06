@@ -1,4 +1,6 @@
+@import "../../../../node_modules/bulma/bulma.sass";
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100');
+@charset "utf-8";
 
 .background {
   position: absolute;
@@ -6,7 +8,6 @@
   left: 0;
   right: 0;
   overflow: hidden;
-}
 
 .quote {
   font: 20px 'Gothic A1', sans-serif;
