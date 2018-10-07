@@ -163,9 +163,18 @@
   
   .todo-text {
     color: white; 
-    padding: 5px;
+    padding: 15px;
   }
+  .todo-item {
+    font-size: 14px; 
 
+    .todo-item-icon {
+      padding: 0 10px 0 10px; 
+    }
+    .todo-item-text {
+    
+    }
+  }
 }
 
 .hidden {
