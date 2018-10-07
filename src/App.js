@@ -3,9 +3,9 @@ import Focus from "./components/Focus";
 import axios from "axios";
 
 import Greetings from "./components/Greetings.js"
-
 import Background from "./components/Background";
 import Hugot from "./components/Hugot.js";
+import "./assets/styles/scss/index.scss"
 
 
 class App extends Component {
@@ -54,7 +54,7 @@ class App extends Component {
           imageLoaded={this.state.imageLoaded}
         />
       
-        <Greetings  />
+        <Greetings />
         <Focus/>
       <Hugot />
       </React.Fragment>
