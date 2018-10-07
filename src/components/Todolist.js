@@ -29,7 +29,9 @@ class Todolist extends Component {
 
   render() {
     return (
-      <button onClick={this.handleViewList}>To Do</button>
+      <div className='todo'>
+        <button onClick={this.handleViewList}>To Do</button>
+      </div>
     );
   }
 }

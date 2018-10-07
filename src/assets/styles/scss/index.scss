@@ -127,9 +127,15 @@
   width: 100%;
   position: absolute;
   bottom: 2%;
-  z-index: 99999999;
+  z-index: 2;
   text-align: center;
   color: #fff;
 }
 
 // TODOLIST
+.todo {
+  position: absolute;
+  z-index: 3;
+  right: 3%;
+  bottom: 3%;
+}
