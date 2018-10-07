@@ -72,6 +72,7 @@
 
 .greeting > .time {
   font-size: 40px;
+}
 
 // Add Focus
 .feature__add-focus {
@@ -118,6 +119,9 @@
     letter-spacing: 0.05em;
   }
   
+}
+
+// QUOTE
 .quote {
   font: 20px 'Gothic A1', sans-serif;
   width: 100%;
@@ -127,3 +131,5 @@
   text-align: center;
   color: #fff;
 }
+
+// TODOLIST
