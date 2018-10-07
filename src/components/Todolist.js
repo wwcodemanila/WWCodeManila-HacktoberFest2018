@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 class Todolist extends Component {
   constructor(props) {
@@ -29,8 +28,13 @@ class Todolist extends Component {
 
   render() {
     return (
-      <div className='todo'>
-        <button onClick={this.handleViewList}>To Do</button>
+      <div>
+        <div className='todo-field'>
+          todo field 
+        </div>
+        <div className='todo'>
+          <button className='btn-todo' onClick={this.handleViewList}>To Do</button>
+        </div>
       </div>
     );
   }
