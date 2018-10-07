@@ -137,5 +137,37 @@
   position: absolute;
   z-index: 3;
   right: 3%;
-  bottom: 3%;
+  bottom: 2%;
+}
+
+.btn-todo {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.todo-field {
+  border: #3D3D3D;
+  border-radius: 10px;
+  background-color: #3D3D3D;
+  width: 230px;
+  height: 100%;
+  max-height: 300px;
+  display: block;
+  z-index: 5;
+  position: absolute;
+  right: 3%;
+  bottom: 5.5%;
+  
+  .todo-text {
+    color: white; 
+    padding: 5px;
+  }
+
+}
+
+.hidden {
+  display: none;
 }
