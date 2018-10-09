@@ -8,7 +8,7 @@ const TodoItem = ({list}) => {
           return (
             <div key={index}>
               <span className='todo-item-icon'>{index}</span>
-              <span className='todo-item-text'>{item.text}</span> 
+              <span className='todo-item-text'>{item.text}</span>
             </div>
           )
         })
@@ -28,7 +28,7 @@ class Todolist extends Component {
         {
           checked: false,
           text: ''
-        } 
+        }
       ]
     };
     this.handleViewList = this.handleViewList.bind(this)
