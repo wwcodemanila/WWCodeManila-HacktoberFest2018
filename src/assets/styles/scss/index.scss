@@ -1,5 +1,5 @@
 @import "../../../../node_modules/bulma/bulma.sass";
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100');
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:100");
 @charset "utf-8";
 
 // BACKGROUND
@@ -7,10 +7,8 @@
   position: relative;
   width: 100%;
   height: 100%;
-
   overflow: hidden;
   float: left;
-  cursor: default;
 }
 
 .background-preload {
@@ -47,13 +45,14 @@
   display: none;
 }
 
-// CONTENT
-.content {
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+.title {
+  font-size: 300px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 60px;
+  color: #ffffff;
 }
 
 .greeting {
@@ -63,7 +62,6 @@
   display: flex;
   align-content: center;
   justify-content: center;
-
 }
 
 .greeting > span {
@@ -90,7 +88,7 @@
   label {
     display: block;
     color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
     letter-spacing: 0.05em;
   }
@@ -111,20 +109,17 @@
     color: #ffffff;
     opacity: 0.6;
   }
-  
+
   .answer {
     color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
     letter-spacing: 0.05em;
   }
 }
-  
-}
 
-// QUOTE
 .quote {
-  font: 20px 'Gothic A1', sans-serif;
+  font: 20px "Gothic A1", sans-serif;
   width: 100%;
   position: absolute;
   bottom: 2%;
@@ -146,13 +141,13 @@
   background-color: transparent;
   color: white;
   font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .todo-field {
-  border: #3D3D3D;
+  border: #3d3d3d;
   border-radius: 10px;
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   width: 230px;
   height: 100%;
   max-height: 300px;
@@ -161,19 +156,18 @@
   position: absolute;
   right: 3%;
   bottom: 5.5%;
-  
+
   .todo-text {
-    color: white; 
+    color: white;
     padding: 15px;
   }
   .todo-item {
-    font-size: 14px; 
+    font-size: 14px;
 
     .todo-item-icon {
-      padding: 0 10px 0 10px; 
+      padding: 0 10px 0 10px;
     }
     .todo-item-text {
-    
     }
   }
 }

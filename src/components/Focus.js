@@ -45,7 +45,7 @@ class Focus extends React.Component {
                 </form>
             </div>
         )
-    }
-}
+  }
+};
 
 export default Focus;
