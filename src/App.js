@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Focus from "./components/Focus";
 import axios from "axios";
-
+import Focus from "./components/Focus";
+import Todolist from "./components/Todolist.js";
 import Greetings from "./components/Greetings.js";
-
 import Background from "./components/Background";
 import Hugot from "./components/Hugot.js";
 
@@ -51,12 +50,10 @@ class App extends Component {
           handleImageLoader={this.handleImageLoader}
           imageLoaded={this.state.imageLoaded}
         />
-
-        <div className="container">
-          <Greetings />
-          <Focus />
-          <Hugot />
-        </div>
+        <Greetings />
+        <Focus />
+        <Hugot />
+        <Todolist />
       </React.Fragment>
     );
   }
