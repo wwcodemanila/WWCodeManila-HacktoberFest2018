@@ -1,7 +1,183 @@
-.background {
+@import "../../../../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100');
+@charset "utf-8";
+
+// BACKGROUND
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  float: left;
+  cursor: default;
+}
+
+.background-preload {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-loaded {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.background-fade-in {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+// CONTENT
+.content {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   overflow: hidden;
+}
+
+.greeting {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.greeting > span {
+  display: block;
+}
+
+.greeting > .time {
+  font-size: 40px;
+}
+
+// Add Focus
+.feature__add-focus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border: 1px solid #ffffff;
+}
+
+.add-focus__form {
+  text-align: center;
+
+  label {
+    display: block;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+  }
+
+  input {
+    width: 100%;
+    padding: 30px 10px 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  
+  .answer {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+  }
+}
+  
+}
+
+// QUOTE
+.quote {
+  font: 20px 'Gothic A1', sans-serif;
+  width: 100%;
+  position: absolute;
+  bottom: 2%;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+// TODOLIST
+.todo {
+  position: absolute;
+  z-index: 3;
+  right: 3%;
+  bottom: 2%;
+}
+
+.btn-todo {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.todo-field {
+  border: #3D3D3D;
+  border-radius: 10px;
+  background-color: #3D3D3D;
+  width: 230px;
+  height: 100%;
+  max-height: 300px;
+  display: block;
+  z-index: 5;
+  position: absolute;
+  right: 3%;
+  bottom: 5.5%;
+  
+  .todo-text {
+    color: white; 
+    padding: 15px;
+  }
+  .todo-item {
+    font-size: 14px; 
+
+    .todo-item-icon {
+      padding: 0 10px 0 10px; 
+    }
+    .todo-item-text {
+    
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }
