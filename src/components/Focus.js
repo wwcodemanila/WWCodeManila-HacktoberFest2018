@@ -40,7 +40,7 @@ class Focus extends React.Component {
                                 type="text"
                                 id="focus-input"
                                 placeholder="Type your focus here..."
-                            /> 
+                            />
                         : <p className="answer">{this.state.answer}</p>
                     }
                 </form>
