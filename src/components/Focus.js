@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/styles/scss/index.scss";
 
 class Focus extends React.Component {
   inputRef = React.createRef;
@@ -27,7 +26,7 @@ class Focus extends React.Component {
     return (
       <div className="feature__add-focus">
         <form className="add-focus__form">
-          <label for="focus-input">What's your main focus for today?</label>
+          <label htmlFor="focus-input">What's your main focus for today?</label>
           {this.state.isEditing ? (
             <input
               onKeyPress={this.onClickEnter}
