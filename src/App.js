@@ -5,6 +5,7 @@ import Todolist from "./components/Todolist.js";
 import Greetings from "./components/Greetings.js";
 import Background from "./components/Background";
 import Hugot from "./components/Hugot.js";
+import "./assets/styles/scss/index.scss";
 
 class App extends Component {
   constructor(props) {
@@ -50,10 +51,10 @@ class App extends Component {
           handleImageLoader={this.handleImageLoader}
           imageLoaded={this.state.imageLoaded}
         />
+
         <Greetings />
         <Focus />
         <Hugot />
-        <Todolist />
       </React.Fragment>
     );
   }
