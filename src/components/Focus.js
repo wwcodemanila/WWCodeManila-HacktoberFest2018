@@ -1,5 +1,4 @@
 import React from 'react'
-import "../assets/styles/scss/index.scss";
 
 class Focus extends React.Component {
 
@@ -30,7 +29,7 @@ class Focus extends React.Component {
             <div className="feature__add-focus">
 
                 <form className="add-focus__form" >
-                    <label for="focus-input">What's your main focus for today?</label>
+                    <label htmlFor="focus-input">What's your main focus for today?</label>
                     {
                         this.state.isEditing ?
                             <input
