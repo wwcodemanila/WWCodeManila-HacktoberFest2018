@@ -1,7 +1,7 @@
 import React from "react"
 import moment from "moment"
 
-const Greetings = () =>{ 
+const Greetings = () =>{
     //console.log(moment().format())
     return(
         <React.Fragment>

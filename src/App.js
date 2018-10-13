@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Focus from "./components/Focus";
 import axios from "axios";
-
+import Focus from "./components/Focus";
+import Todolist from "./components/Todolist.js"
 import Greetings from "./components/Greetings.js"
 import Background from "./components/Background";
 import Hugot from "./components/Hugot.js";
@@ -45,7 +45,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-
         <Background
           imgSrc={this.state.img}
           alt={this.state.post_url}
@@ -53,10 +52,10 @@ class App extends Component {
           handleImageLoader={this.handleImageLoader}
           imageLoaded={this.state.imageLoaded}
         />
-      
         <Greetings />
-        <Focus/>
-      <Hugot />
+        <Focus />
+        <Hugot />
+        <Todolist />
       </React.Fragment>
     );
   }
